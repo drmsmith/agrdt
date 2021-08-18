@@ -8,7 +8,7 @@ Available at: https://www.medrxiv.org/content/10.1101/2021.08.13.21261968v1
 All code was developed, tested and run using Rv3.6.0
 
 # about
-Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. Epidemiological outcomes from these data are calculated. Surveillance interventions are simulated, applied retrospectively to the outbreak data. Summary outcomes from simulated surveillance are calculated, and plots are rendered. Correspondings files and folders are described below.
+Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. Epidemiological outcomes from these data are calculated. Surveillance interventions are simulated, applied retrospectively to the outbreak data. Summary outcomes from simulated surveillance are calculated, and plots are rendered. Correspondings files and folders are described below. We recommend working through them in order to understand the data and successive steps of operations underlying simulations and outcomes.
 
 # Rproject
 * All files are associated with an R project (for stable working directory)
@@ -48,7 +48,7 @@ Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. 
   * (4.1) incidence.R: calculates incidence, including contribution of super-spreading to transmission and acquisition
   * (4.2) prevalence.R: calculates prevalence
   * (4.3) sensitivity_dynamics.R: evaluate dynamics of true-positive rate, combining infection data and sensitivity curves
-  * (4.4) data_analysis_CTC/lot3/: corresponding outcomes are saved here 
+  * (4.4) data_analysis_CTC/lot3/: corresponding CTC analysis outcomes are saved here 
 
 # surveillance loop
 * (5) surveillance_loop.R: R file that executes functions from functions.R upon files from Model_herdI_incidenceLow to simulate surveillance
@@ -73,7 +73,7 @@ Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. 
 # figures
 * (8) plots/: a folder containing two R files to render plots
   * (8.1) paper_figure_aesthetics.R: a file with labels and aesthetic arguments for plots
-  * (8.2) paper_figures.R: a file to render figures
+  * (8.2) paper_figures.R: a file to render figures, using data from data_analysis_CTC/lot3/ and Surveillance/output/Outcomes_lot3/
 
 # contact
 David Smith \
