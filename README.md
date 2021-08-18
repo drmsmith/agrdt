@@ -5,6 +5,7 @@ This R code supports Smith et al., (2021). Rapid antigen testing as a reactive p
 
 Available at: https://www.medrxiv.org/content/10.1101/2021.08.13.21261968v1
 
+All code was developed, tested and run using Rv3.6.0
 
 # about
 Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. Epidemiological outcomes from these data are calculated. Surveillance interventions are simulated, applied retrospectively to the outbreak data. Summary outcomes from simulated surveillance are calculated, and plots are rendered. Correspondings files and folders are described below.
@@ -53,6 +54,7 @@ Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. 
 * (5) surveillance_loop.R: R file that executes functions from functions.R upon files from Model_herdI_incidenceLow to simulate surveillance
   * results are saved to Surveillance/output/Output_lot3/
   * follows naming convention for CTC files: files for LTCF1 end in 0202_1_1, LTCF2 in 0202_2_1, and LTCF3 in 0505_2_2
+  * NB: this program was originally designed for parallel dispatch on a computing cluster; to run all simulations considered and ultimately used to produce results (below), estimated run-time on a normal desktop computer is roughly 100 hours
 
 # raw surveillance output
 * (6) Surveillance/output/Output_lot3/: folder containing CSV output files from surveillance loop
