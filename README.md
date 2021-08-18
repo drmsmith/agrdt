@@ -7,7 +7,7 @@ Available at: https://www.medrxiv.org/content/10.1101/2021.08.13.21261968v1
 
 
 # about
-Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. Epidemiological outcomes from these data are calculated. Surveillance interventions are simulated, applied retrospectively to these outbreak data. Summary outcomes from simulated surveillance are calculated, and plots are rendered. Correspondings files and folders are described below.
+Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. Epidemiological outcomes from these data are calculated. Surveillance interventions are simulated, applied retrospectively to the outbreak data. Summary outcomes from simulated surveillance are calculated, and plots are rendered. Correspondings files and folders are described below.
 
 # Rproject
 * All files are associated with an R project (for stable working directory)
