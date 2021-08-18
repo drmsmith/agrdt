@@ -14,7 +14,7 @@ Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. 
   * agrdt.Rproj
 
 # CTCmodeler outbreak simulations
-* (1) Model_herdI_incidenceLow/:
+* (1) Model_herdI_incidenceLow.zip:
   *  Folder containing output data from outbreak simulations. Sub-folders contain corresponding types of output data, for all outbreak simulations across 3 included LTCFs. For simplicity, only data for the baseline "low community incidence" scenario are provided; throughout, this scenario and its corresponding lot of simulations are referred to as "lot3"
   *  Guide to interpret filenames, using e.g. CommCases0.20.2Christmasnetwork1IPC1low_SIM_1_Bacteria_Coronaviridae_Alphaletovirus_Covid19___)
 		* CommCases: type of output data saved herein (others are FirstIndex, ManuportageTransmission, PEreplacement, secondaryCases, statusByDay)
