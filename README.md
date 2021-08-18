@@ -54,18 +54,18 @@ Ouptut data from stochastic outbreak simulations using CTCmodeler are provided. 
 * (5) surveillance_loop.R: R file that executes functions from functions.R upon files from Model_herdI_incidenceLow to simulate surveillance
   * results are saved to Surveillance/output/Output_lot3/
   * follows naming convention for CTC files: files for LTCF1 end in 0202_1_1, LTCF2 in 0202_2_1, and LTCF3 in 0505_2_2
-  * NB: this program was originally designed for parallel dispatch on a computing cluster; to run all simulations considered and ultimately used to produce results (below), estimated run-time on a normal desktop computer is roughly 100 hours
+  * NB: this program was originally designed for parallel dispatch on a computing cluster; to run all simulations considered and ultimately used to produce results (below), estimated run-time on a normal desktop computer is roughly 100 hours. See file to modify initialization conditions to run small demo runs as desired.
 
 # raw surveillance output
 * (6) Surveillance/output/Output_lot3/: folder containing CSV output files from surveillance loop
   * each corresponds to a different CTC outbreak and sensitivity assumption (time-varying, uniform, or perfect)
   * due to space limitations, simulated surveillance data provided here are limited to the first 5 CTC simulations for each LTCF
-  * however, surveillance for all outbreaks can be reproduced by modifying arguments in surveillance loop to run as desired
+  * however, if desired, surveillance for all outbreaks can be reproduced locally using surveillance loop as described above
 
 # processing surveillance output
 * (7) process_surveillance_data_lot3.R: a file with two key functions
   * (1) first, it reads and consolidates raw surveillance output from Surveillance/output/Output_lot3/: 
-  * for each LTCF, all surveillance results are combined into one dataframe; these can be saved into a folder called Surveillance/output/Output_prepared_lot3/ (not possible here; files are large, roughly 50-75MB, and exceed present space limit)
+  * for each LTCF, all surveillance results are combined into one dataframe; these can be saved into a folder called Surveillance/output/Output_prepared_lot3/ (not possible here; files are roughly 50-75MB, and exceed present space limit)
   * (2) second, it calculates surveillance outcomes: 
   * by executing corresponding functions from functions.R upon the "prepared" data from Surveillance/output/Output_prepared_lot3/ and saving results into the folder Surveillance/output/Outcomes_lot3/
   * NB: although final "prepared data" could not fit here, all final outcomes files are provided, corresponding to the 3 LTCFs, and hence all results and figures for the baseline low incidence scenario presented in the manuscript can be reproduced
