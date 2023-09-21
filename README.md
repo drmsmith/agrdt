@@ -1,9 +1,9 @@
 # agrdt
 An evaluation of rapid diagnostic testing (Ag-RDT) for SARS-CoV-2 transmission prevention in long-term care.
 
-This R code supports Smith et al., (2021). Rapid antigen testing as a reactive public health response to surges in SARS-CoV-2 outbreak risk in healthcare settings.
+This R code supports Smith DRM et al., (2021). Rapid antigen testing as a reactive response to surges in nosocomial SARS-CoV-2 outbreak risk.
 
-Available at: https://www.medrxiv.org/content/10.1101/2021.08.13.21261968v1
+Available at: https://www.nature.com/articles/s41467-021-27845-w
 
 All code was developed, tested and run using Rv3.6.0
 
